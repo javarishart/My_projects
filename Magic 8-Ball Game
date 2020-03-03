@@ -1,0 +1,47 @@
+# THE MAGIC 8-BALL PROGRAM
+# Import the modules
+import random
+
+#boolean
+run = True
+
+while run:
+  question = input("Ask the magic 8 ball a question: (press enter to quit) ")
+
+  answers = random.randint(1,8)
+
+  if question == "":
+    sys.exit()
+
+  elif answers == 1:
+    print("It is certain")
+    run = False
+  
+  elif answers == 2:
+    print("Outlook good")
+    run = False
+  
+  elif answers == 3:
+    print("You may rely on it")
+    run = False
+
+  elif  answers == 4:
+    print("Ask again later")
+    run = False
+  
+  elif answers == 5:
+    print("Concentrate and ask again")
+    run = False
+  
+  elif answers == 6:
+    print("Reply hazy, try again")
+    run = False
+  
+  elif answers == 7:
+    print("My reply is no")
+    run = False
+
+  elif answers == 8: 
+    print("My sources say no")
+    run = False
+    
