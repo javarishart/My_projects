@@ -1,0 +1,94 @@
+print('Hello! Welcome to Trivia')
+
+answer = input('Are you ready to play (yes/no): ')
+
+score = 0
+
+total_q = 9
+
+if answer.lower() == "yes" :
+    answer = input('1. Who was the first president of the United States of America? ')
+    
+   
+    if answer.lower() == 'george washington':
+        score = score + 1
+        print('Correct!')
+        
+    else:
+        print('Incorrect!')
+    
+    answer = input('2. What year did the Civil War end? ')
+    
+    
+    if answer.lower() == '1865' :
+        score = score + 1
+        print('Correct!')
+        
+    else:
+        print('Incorrect!')
+    
+    answer = input('3. What year was the battle of Hastings fought? ')
+    
+    if answer.lower() == '1066' :
+        score = score + 1
+        print('Correct!')
+        
+    else:
+        print('Incorrect!')
+    
+    answer = input('4. Who was the first black president of the United States of America? ')
+    
+    if answer.lower() == 'barrack obama' :
+        score = score + 1
+        print('Correct!')
+        
+    else:
+        print('Incorrect!')
+    
+    answer = input('5. What is the capital of the United States of America? ')
+    
+    if answer.lower() == 'washington dc' :
+        score = score + 1
+        print('Correct!')
+    else:
+        print('Incorrect!')
+    
+    answer = input('6. What is the abbreviation for the order of operations? ')
+    
+    if answer.lower() == 'pemdas' :
+        score = score + 1
+        print('Correct!')
+    else:
+        print('Incorrect!')
+    
+    answer = input('7. Who are the 2020 Superbowl Champions? ')
+    
+    if answer.lower() == 'kansas city chiefs' :
+        score = score + 1
+        print('Correct!')
+    else:
+        print('Incorrect!')
+    
+    answer = input('8. How many letters are in the english alphabet? ')
+   
+    if answer.lower() == '27' :
+        score = score + 1
+        print('Correct!')
+    else:
+        print('Incorrect!')
+    
+    answer = input('9. What year was Jackson State University founded? ')
+ 
+    if answer.lower() == '1877' :
+        score = score + 1
+        print('Correct!')
+    else:
+        print('Incorrect!')
+
+    print('Thank you for playing! You got', score, 'questions correct', )
+    print(score)
+    mark = (score/total_q) * 100
+    
+    print ('Mark:', str(mark) + '%')
+
+print("Bye Bye")
