@@ -1,0 +1,128 @@
+print('Hello NBA Fan! Welcome to the NBA Trivia Quiz!!!')
+
+answer = input('Would you like to play the NBA Trivia Quiz? (yes/no): ')
+
+score = 0
+
+total_q = 10 #Total Number of Questions.
+
+while True:
+    if answer.lower() not in ['yes', 'no']:
+        answer = input ('That is not a choice. Would you like to play the NBA Trivia Quiz? (yes/no): ')
+
+    else:
+
+        if answer.lower() == 'yes':
+            answer = input('1. Who won the 2019 NBA finals? ')
+
+            if answer.lower() in ['the toronto raptors', 'toronto raptors', 'raptors', 'toronto', 'the raptors']:
+                score = score + 1
+                print('Correct!')
+
+            else:
+                print('Incorrect!')
+
+
+            answer = input('2. Which NBA player has the most NBA championships? ')
+
+            if answer.lower() == 'bill russell':
+                score = score + 1
+                print('Correct!')
+
+            else:
+                print('Incorrect!')
+
+            answer = input('3. Who is the NBA’s all time leading scorer? ')
+
+            if answer.lower() in ['kareem abdul-jabbar', 'kareem', 'abdul-jabbar']:
+                score = score + 1
+                print('Correct!')
+
+            else:
+                print('Incorrect!')
+
+            answer = input('4. Which NBA team is located in Boston? ')
+
+            if answer.lower() in ['the celtics', 'celtics', 'the boston celtics', 'boston celtics']:
+                score = score + 1
+                print('Correct!')
+
+            else:
+                print('Incorrect!')
+
+            answer = input('5. Which NBA franchise has the most Finals appearances? ')
+
+            if answer.lower() in ['the los angeles lakers','the lakers', 'los angeles', 'lakers', 'los angeles lakers']:
+                score = score + 1
+                print('Correct!')
+
+            else:
+                print('Incorrect!')
+
+            answer = input('6. How many franchises make up the NBA? ')
+
+            if answer.lower() in ['30', 'thirty']:
+                score = score + 1
+                print('Correct!')
+
+            else:
+                print('Incorrect!')
+
+            answer = input('7. What is the maximum amount of players allowed on the court for each team? ')
+
+            if answer.lower() in ['5', 'five']:
+                score = score + 1
+                print('Correct!')
+
+            else:
+                print('Incorrect!')
+
+            answer = input('8. Which NBA franchise is located in San Antonio, Texas? ')
+
+            if answer.lower() in ['the san antonio spurs', 'the spurs', 'san antonio spurs', 'spurs']:
+                score = score + 1
+                print('Correct!')
+
+            else:
+                print('Incorrect!')
+
+            answer = input('9. How many NBA franchises are located outside of the United States? ')
+
+            if answer.lower() in ['1', 'one']:
+                score = score + 1
+                print('Correct!')
+
+            else:
+                print('Incorrect!')
+
+            answer = input('10. What NBA franchise did Dirk Nowitzki play for? ')
+
+            if answer.lower() in ['the dallas mavericks', 'the mavericks', 'dallas', 'mavericks', 'dallas mavericks']:
+                score = score + 1
+                print('Correct!')
+
+            else:
+                print('Incorrect!')
+            
+            percentage = ((score/total_q)*100)
+            print('You got a '+ str(percentage) +'%.')
+            
+            x = percentage
+            
+            if x >= 80:
+                print('Great Job!')
+            
+            
+            elif x <= 70 and x >= 50:
+                print('You can do better!')
+            
+            else:
+                print('Do better!')
+            answer = input('Would you like to play again? (yes/no): ')
+            
+
+        else:
+            print('Ok then. Bye Bye :(')
+            break
+
+
